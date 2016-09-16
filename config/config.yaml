@@ -731,6 +731,12 @@
           url: /vulnerability/getVulnerabilities
           usage: returns a list of vulnerabilities for a given set of product/version
           method: post
+          flags:
+            - name: partial
+              value:
+              usage: Queries for just name as well as org+name
+              required: False
+              type: bool
           args:
             - name: list
               type: array
